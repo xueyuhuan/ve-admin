@@ -1,0 +1,10 @@
+{
+  "aside": {
+    "homepage": "Home Page"
+  },
+  "header": {
+    "data": "Personal Data",
+    "password": "Change Password",
+    "logout": "Log out"
+  }
+}

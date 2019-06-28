@@ -1,0 +1,10 @@
+{
+  "aside": {
+    "homepage": "主页"
+  },
+  "header": {
+    "data": "个人资料",
+    "password": "修改密码",
+    "logout": "退出登录"
+  }
+}
