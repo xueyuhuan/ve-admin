@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import i18n from './i18n'
+import echats from 'echarts'
 
 import 'element-ui/lib/theme-chalk/index.css';
 import 'element-ui/lib/theme-chalk/display.css';
@@ -12,6 +13,8 @@ import './assets/scss/common.scss';
 import animated from 'animate.css'
 
 Vue.use(animated)
+
+Vue.prototype.$echarts = echats
 
 Vue.config.productionTip = false
 

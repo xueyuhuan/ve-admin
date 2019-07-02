@@ -6,5 +6,14 @@
     "data": "个人资料",
     "password": "修改密码",
     "logout": "退出登录"
+  },
+  "home": {
+    "shortcut":"快捷方式",
+    "todo": "待办事项",
+    "version": "版本信息",
+    "ver": {
+      "tip": "我们不生产代码，我们只是代码的搬运工"
+    },
+    "overview": "数据概览"
   }
 }

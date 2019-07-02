@@ -49,7 +49,7 @@
         height: 100%;
         width: 220px;
         background-color: #20222A;
-        transition: width 2s;
+        transition: all 2s;
         .logo{
             @include flex(center);
             height: 50px;
