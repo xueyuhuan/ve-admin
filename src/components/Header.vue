@@ -46,6 +46,11 @@
                 return this.$i18n.locale==='zh'?'中文':'English'
             }
         },
+        mounted(){
+            let x=window.matchMedia("(max-width: 767px)");
+            this.handleMedia(x); // 执行时调用的监听函数
+            x.addListener(this.handleMedia) // 状态改变时添加监听器
+        },
         methods:{
             toggleFold(){
                 this.fold=!this.fold;
@@ -53,6 +58,21 @@
                     name:'fold',
                     value:this.fold
                 })
+            },
+            handleMedia(x){
+                if (x.matches) { // 媒体查询
+                    this.fold=true;
+                    this.$store.commit('setData',{
+                        name:'fold',
+                        value:this.fold
+                    })
+                } else {
+                    this.fold=false;
+                    this.$store.commit('setData',{
+                        name:'fold',
+                        value:this.fold
+                    })
+                }
             },
             handleFullScreen(){
                 let element = document.documentElement;

@@ -7,6 +7,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "dev-build": "vue-cli-service build --mode development",
     "lint": "vue-cli-service lint",
     "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/lang/**/*.json'",
     "test:unit": "vue-cli-service test:unit"
@@ -15,7 +16,7 @@
     "animate.css": "^3.7.2",
     "core-js": "^2.6.5",
     "echarts": "^4.2.1",
-    "element-ui": "^2.10.0",
+    "element-ui": "^2.10.1",
     "vue": "^2.6.10",
     "vue-i18n": "^8.0.0",
     "vue-router": "^3.0.3",

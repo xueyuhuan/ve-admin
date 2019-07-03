@@ -1,7 +1,7 @@
 <template>
     <div class="ve-aside" :class="classAside">
         <div class="logo"><i class="fab fa-penny-arcade"></i></div>
-        <el-menu :collapse="fold"
+        <el-menu :collapse="fold" router :default-active="$route.path"
                  background-color="#20222A" text-color="#ccc" active-text-color="#ffd04b">
             <el-submenu index="1">
                 <template slot="title"><i class="fas fa-home fa-fw"></i>
@@ -9,9 +9,21 @@
                         <span v-show="!fold">{{ $t("aside.homepage") }}</span>
                     </transition>
                 </template>
-                <el-menu-item index="1-1">
-                    {{$t('aside.homepage')}}1
+                <el-menu-item index="/">
+                    控制台
                 </el-menu-item>
+            </el-submenu>
+            <el-submenu index="set">
+                <template slot="title"><i class="fas fa-cog fa-fw"></i>
+                    <transition enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
+                        <span v-show="!fold">设置</span>
+                    </transition>
+                </template>
+                <el-submenu index="set-1">
+                    <span slot="title">个人设置</span>
+                    <el-menu-item index="/set/user/info">基本资料</el-menu-item>
+                    <el-menu-item index="/set/user/password">修改密码</el-menu-item>
+                </el-submenu>
             </el-submenu>
         </el-menu>
     </div>

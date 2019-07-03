@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view/>
+      <layout><router-view/></layout>
   </div>
 </template>
 
@@ -12,3 +12,9 @@
         background-color: #f2f2f2;
     }
 </style>
+<script>
+    import Layout from "./views/layout/layout";
+    export default {
+        components: {Layout}
+    }
+</script>

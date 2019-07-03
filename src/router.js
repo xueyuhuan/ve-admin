@@ -12,6 +12,14 @@ export default new Router({
             component: Home
         },
         {
+            path:'/set/user/info',
+            component:()=>import('./views/set/user/info')
+        },
+        {
+            path:'/set/user/password',
+            component:()=>import('./views/set/user/password')
+        },
+        {
             path: '/about',
             name: 'about',
             // route level code-splitting

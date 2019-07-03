@@ -1,5 +1,5 @@
 <template>
-    <layout class="home">
+    <div class="home">
         <el-row class="row1" :gutter="15">
             <el-col :sm="24" :md="8">
                 <el-card :body-style="{ 'padding-right': '0px','padding-bottom': '10px' }">
@@ -106,18 +106,12 @@
                 </el-card>
             </el-col>
         </el-row>
-    </layout>
+    </div>
 </template>
 
 <script>
-    // @ is an alias to /src
-    import Layout from "./layout/layout";
-
     export default {
         name: 'home',
-        components: {
-            Layout,
-        },
         data(){
             return{
                 tableData: [{

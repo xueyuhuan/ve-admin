@@ -1,4 +1,5 @@
 module.exports = {
+    publicPath:process.env.NODE_ENV === 'production' ? '/' :'/ve-admin/',
     lintOnSave: false,
     pluginOptions: {
         i18n: {
